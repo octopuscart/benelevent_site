@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 11, 2020, 4:55:54 PM
+    Author     : rani
+*/
+
+#information-bar .container {
+    background: #fff none repeat scroll 0 0;
+    margin-bottom: -35px;
+    margin-top: 0;
+    padding: 45px 0;
+    position: relative;
+   top: auto;
+    z-index: 999;
+}
