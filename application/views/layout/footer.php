@@ -1,137 +1,181 @@
-            
-<footer id="footer" class="dark" style="background: url('<?php echo base_url(); ?>assets/theme2/res/images/footer-bg.jpg')  repeat center center / cover; background-size: auto 100%;; padding:0px 0 22px;    ">
 
-    <div id="copyrights" class="nobg">
-        <div class="container clearfix">
-            <div class="section nobottommargin row tripadvisorblock" style="background:none;text-align: center;    margin-top: 0px;">
-                <div class="col-md-3" style=" padding: 0;">
-                    <img src="<?php echo base_url(); ?>assets/theme2/res/images/tripadvisor.svg" style="      height: auto;
-                         width: 278px;
 
-                         margin-top: 34px;"/>
 
+<div class="vc_row wpb_row vc_row-fluid">
+    <div class="wpb_column col-md-12">
+        <section id="event-sponsor">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h1>EVENT SPONSOR</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum<br />
+                                has been the industry's standard dummy text ever since the 1500</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6" style="    text-align: left;
-                     font-size: 14px;">
-                    <h4 style="margin-bottom: 0;"> Fantastic food!</h4>
-                    <p>
-                        Been coming here since childhood, it has always been one of the best Indian food to gos. Quality is fresh and unmatched, family style and great atmosphere
-                        <br/>AShah- Tripadvisor member since 2020 (Date of visit: March 2020)
-                    </p>
-                </div>
-                <div class="col-md-3">
-                    <a href="https://www.tripadvisor.com/Restaurant_Review-g294217-d1216071-Reviews-Woodlands_Indian_Vegetarian_Restaurant-Hong_Kong.html" target="_blank" class="button button-circle button-xlarge colordarkgreen bg-white button-light text-white nott ls0 font-primary ml-0 mt-3 mt-md-0 " style="     margin-top: 31px!important; background: #8bc646!important;">Write Review</a>
+                <div class="row sponsor-logo-row clearfix">
+                    <div class="col-lg-12">
+                        <ul class="sponsor-logo">
 
+                            <li><div class="item">
+                                    <img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/1-3.png" alt="image" title="wordpress">
+                                </div></li>
+                            <li><div class="item">
+                                    <img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/2-3.png" alt="image" title="envato">
+                                </div></li>
+                            <li><div class="item">
+                                    <img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/3-3.png" alt="image" title="Pixeden">
+                                </div></li>
+                            <li><div class="item">
+                                    <img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/4-3.png" alt="image" title="mail chimp">
+                                </div></li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <hr/>
-            <div class="col col-md-12 tglineblock">
-                <ul>
-                    <?php
-                    $taglinearray = ["Authentically Indian. Awesomely Vegetarian",
-                        "Vegetarian’s Favorite Since 1981",
-                        "Four Decades of First Class Vegetarian Dining",
-                        "Restaurant with 3 generations of customers.",
-                        "Hong Kong’s First.. Still the Best",
-                        "Introducer of Dosa in Hong Kong",
-                        "Vegan Friendly Restaurant.",
-                        "Exclusive Menu for Vegan",
-                        "We serve Vegans",
-                        "Strictly Vegetarian. Simply Vegetarian.",
-                        "Delightful Vegetarian Food"];
-                    foreach ($taglinearray as $key => $value) {
+        </section>
+        <!-- /#event-sponsor -->
+
+    </div>
+</div>
+<div class="vc_row wpb_row vc_row-fluid">
+    <div class="wpb_column col-md-12">
+        <!-- #subscribe-newsletter -->
+        <section id="subscribe-newsletter">
+            <div class="container">
+                <div class="gradient-overlay">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
+                            <div class="text-box col-lg-6 col-md-6 col-sm-6">
+                                <span>Subcribe  </span>Our News 						</div>
+                            <div class="input-box col-lg-6 col-md-6 col-sm-6">
+                                <form target="popupwindow" method="post" role="form" action="http://feedburner.google.com/fb/a/mailverify" accept-charset="utf-8" id="subscribe2" name="mc-embedded-subscribe-form" novalidate>
+                                    <input type="text" name="email" id="newsletter_input2" placeholder="Enter Email">
+                                    <input type="hidden" id="uri2" name="uri" value="">
+                                    <input type="hidden" value="en_US" name="loc">
+                                    <button type="submit" name="subscribe" id="submit2"><i class="fa fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<p></p>
+<!-- footer -->
+<footer>
+
+    <div class="container">
+        <div class="row">
+            <div id="template_path_abous_us-2"  class="col-lg-3 col-md-3 col-sm-6 footer-widget widget_template_path_abous_us">      		
+                <!-- .footer-widget -->
+                <div class="about-widget" >
+                    <img src="<?php echo base_url(); ?>assets/theme/img/resources/logo.png" alt="Footer Logo">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br> <br> Ipsum has been the industry's standard <br> dummy text ever since th1500s, when an <br> unknown printer took a galley book.</p>
+                    <div class="social-icons">
+
+                        <a title="Face Book" href="http://facebook.com/"><span class="fa fa-facebook"></span></a>
+
+                        <a title="Twitter" href="http://twitter.com/"><span class="fa fa-twitter"></span></a>
+
+                        <a title="Google plus" href="http://googleplus.com/"><span class="fa fa-google-plus"></span></a>
+
+                        <a title="Linked In" href="http://linkedin.com/"><span class="fa fa-linkedin"></span></a>
+
+                        <a title="Pinterest" href="http://pinterest.com/"><span class="fa fa-pinterest"></span></a>
+                    </div>
+                </div>
+                <!-- /.footer-widget -->
+
+            </div>
+            <div id="text-2"  class="col-lg-3 col-md-3 col-sm-6 footer-widget widget_text">
+                <h3>QUICK LINKS</h3>			
+                <div class="textwidget"><ul>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> FAQS AND FAQ</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Support and Support</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Sitemap and Sitemap</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Blog and Blog</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Community and Community</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Membership and Membership</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Event and Event</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Contact Us and Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+<div id="text-2"  class="col-lg-3 col-md-3 col-sm-6 footer-widget widget_text">                <h3>UP COMMING EVENTS</h3>			
+                <div class="textwidget"><ul>
+                        <?php
+                        for($i=0;$i<8;$i++){
                         ?>
-                        <li style="    display: inline;
-                            text-align: center;"><?php echo $value . ($key == count($taglinearray) - 1 ? '' : ' |'); ?></li>
-                            <?php
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Event Name <?php echo $i;?></a></li>
+                        <?php
                         }
                         ?>
-                </ul>
+                 </ul>
+                </div>
 
             </div>
-            <hr/>
-            <div class="col_half nobottommargin">
-                <span class="font-primary text-white">&copy; WOODLANDS. <?php echo date('Y'); ?>. All Rights Reserved.</span>
-            </div>
-            <div class="col_half col_last nobottommargin">
-                <div class="copyrights-menu copyright-links fright clearfix text-white">
-                    <a href="<?php echo site_url("/"); ?>">Home</a>
-                    /<a href="<?php echo site_url("about-us"); ?>">Insights</a>
-                    /<a href="<?php echo site_url("review"); ?>">Review</a>
-                    /<a href="<?php echo site_url("menu/0/0"); ?>">Menu</a>
-                    /<a href="<?php echo site_url("contact"); ?>">Contact</a>
-                </div>
+            <div id="template_path_footer_recent_post_with_image-2"  class="col-lg-3 col-md-3 col-sm-6 footer-widget widget_template_path_footer_recent_post_with_image"><h3>Event Gallery</h3>		
+                <ul class="photo-gallery">
+                    <!-- Title -->
+
+                    <li><a class="fancybox" href="2016/02/11/post-with-image-here-7/index.html"><img width="75" height="65" src="<?php echo base_url(); ?>assets/theme/uploads/2016/02/4-2-75x65.jpg" class="img-responsive wp-post-image" alt="4" /></a></li>
+
+
+                    <li><a class="fancybox" href="2016/02/11/post-with-image-here-6/index.html"><img width="75" height="65" src="<?php echo base_url(); ?>assets/theme/uploads/2016/02/3-2-75x65.jpg" class="img-responsive wp-post-image" alt="3" /></a></li>
+
+
+                    <li><a class="fancybox" href="2016/02/11/post-with-image-here-5/index.html"><img width="75" height="65" src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/1-1-2-75x65.jpg" class="img-responsive wp-post-image" alt="1" /></a></li>
+
+
+                    <li><a class="fancybox" href="2016/02/11/post-with-image-here-4/index.html"><img width="75" height="65" src="<?php echo base_url(); ?>assets/theme/uploads/2016/02/4-2-75x65.jpg" class="img-responsive wp-post-image" alt="4" /></a></li>
+
+
+                    <li><a class="fancybox" href="2016/02/11/post-with-image-here-3/index.html"><img width="75" height="65" src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/1-1-2-75x65.jpg" class="img-responsive wp-post-image" alt="1" /></a></li>
+
+
+                    <li><a class="fancybox" href="2016/02/11/post-with-image-here-2/index.html"><img width="75" height="65" src="<?php echo base_url(); ?>assets/theme/uploads/2016/02/3-2-75x65.jpg" class="img-responsive wp-post-image" alt="3" /></a></li>
+
+                </ul>
+
+            </div>			</div>
+    </div>
+
+</footer>
+<!-- /footer -->
+
+<!-- #bottom-bar -->
+<section id="bottom-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>© 2015 <a href="index-2.html">EVENT TIME</a> ALL RIGHTS RESERVED</p>
             </div>
         </div>
     </div>
-</footer>
+</section>
+<!-- /#bottom-bar -->
+
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/theme/js/countdown.min68a4.js?ver=4.4.22'></script>
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/theme/js/jquery.easing.min68a4.js?ver=4.4.22'></script>
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/theme/js/jquery.fancybox.pack68a4.js?ver=4.4.22'></script>
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/theme/js/jquery.mixitup.min68a4.js?ver=4.4.22'></script>
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/theme/js/jquery.bxslider.min68a4.js?ver=4.4.22'></script>
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/theme/js/owl.carousel.min68a4.js?ver=4.4.22'></script>
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/theme/js/jquery.appear68a4.js?ver=4.4.22'></script>
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/theme/js/jquery.countTo68a4.js?ver=4.4.22'></script>
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/theme/js/circle-progress68a4.js?ver=4.4.22'></script>
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/theme/js/wow68a4.js?ver=4.4.22'></script>
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/theme/js/jquery.nav68a4.js?ver=4.4.22'></script>
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/theme/js/jquery.scrollTo68a4.js?ver=4.4.22'></script>
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/theme/js/custom68a4.js?ver=4.4.22'></script>
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/theme/plugins/js_composer/assets/js/dist/js_composer_front.minc422.js?ver=4.11.1'></script>
 </div>
-
-<div id="gotoTop" class="icon-line-arrow-up"></div>
-
-<script src="<?php echo base_url(); ?>assets/theme2/js/jquery.js"></script>
-<script src="<?php echo base_url(); ?>assets/theme2/js/plugins.js"></script>
-
-<script src="<?php echo base_url(); ?>assets/theme2/js/functions.js"></script>
-<script src="<?php echo base_url(); ?>assets/theme2/angular/shopController.js"></script>
-<!-- type ahead-->
-<script src="<?php echo base_url(); ?>assets/handlebars.js" type="text/javascript"></script>
-
-<!-- type ahead-->
-<script src="<?php echo base_url(); ?>assets/typeahead.bundle.js" type="text/javascript"></script>
-<script>
-
-    jQuery(document).ready(function ($) {
-
-        var carouselRTL = false;
-
-        if ($('body').hasClass('rtl')) {
-            carouselRTL = true;
-        }
-
-        $('#food-menu-carousel2').owlCarousel({
-            animateIn: 'fadeIn',
-            animateOut: 'fadeOut',
-            items: 1,
-            mouseDrag: false,
-            dotsContainer: '#item-thumb',
-            rtl: carouselRTL
-        });
-
-        $('#dessert-menu-carousel').owlCarousel({
-            animateIn: 'fadeIn',
-            animateOut: 'fadeOut',
-            items: 1,
-            mouseDrag: false,
-            dotsContainer: '#item-thumb1',
-            rtl: carouselRTL
-        });
-    });
-
-
-
-</script>
-
-
-<script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "85256818131", // WhatsApp number
-            call_to_action: "Contact Us", // Call to action
-            position: "right", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () {
-            WhWidgetSendButton.init(host, proto, options);
-        };
-        var x = document.getElementsByTagName('script')[0];
-        x.parentNode.insertBefore(s, x);
-    })();
-</script>
 </body>
 
+<!-- Mirrored from asianitbd.com/wp/eventtime/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Jun 2020 11:31:52 GMT -->
 </html>

@@ -14,6 +14,17 @@ and open the template in the editor.
     margin-top: 0;
     padding: 45px 0;
     position: relative;
-   top: auto;
+    top: auto;
     z-index: 999;
+}
+
+.register_li{
+    width: 100%!important;
+    margin-bottom: 35px;   
+}
+
+#register-now .register_ul {
+    background: #fff;
+    padding: 40px 45px;
+    margin-top: 55px;
 }
