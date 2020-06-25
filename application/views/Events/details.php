@@ -62,7 +62,7 @@ $this->load->view('layout/header');
                                       <hr/>
                                     <li class=""><i class="fa fa-phone"></i> &nbsp;<?php echo $eventdata['event']['contact_no']; ?></li>
                                    <hr/>
-                                   <a href="#" class="colored hvr-bounce-to-right join-event-button">JOIN EVENT NOW</a>
+                                   <a href="<?php echo site_url('Account/login');?>" class="colored hvr-bounce-to-right join-event-button">JOIN EVENT NOW</a>
                                    <span>
                                        Get notified when the event happens next time.
                                    </span>

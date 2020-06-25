@@ -25,7 +25,11 @@ $this->load->view('layout/header');
                                 
                                     <div class="register_li">
                                         <div class="input-wrap">
-                                            <label><img src="<?php echo base_url(); ?>assets/theme/img/icons/email.png" alt="">EMAIL</label><span class="wpcf7-form-control-wrap email-472"><input type="email" name="email-472" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Enter your email" /></span>
+                                            <label>
+                                                <img src="<?php echo base_url(); ?>assets/theme/img/icons/email.png" alt="">EMAIL</label>
+                                            <span class="wpcf7-form-control-wrap email-472">
+                                                <input type="email" name="email-472" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Enter your email" />
+                                            </span>
                                         </div>
                                     </div>
                                  
@@ -49,17 +53,28 @@ $this->load->view('layout/header');
 
                                     <div class="register_li">
                                         <div class="input-wrap">
-                                            <label><img src="<?php echo base_url(); ?>assets/theme/img/icons/name.png" alt="">Name</label><span class="wpcf7-form-control-wrap text-553"><input type="text" name="text-553" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Name" /></span>
+                                            <label>
+                                                <img src="<?php echo base_url(); ?>assets/theme/img/icons/name.png" alt="">
+                                                NAME
+                                            </label>
+                                            <span class="wpcf7-form-control-wrap text-553">
+                                                <input type="text" name="first_name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Name" />
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="register_li">
                                         <div class="input-wrap">
-                                            <label><img src="<?php echo base_url(); ?>assets/theme/img/icons/email.png" alt="">EMAIL</label><span class="wpcf7-form-control-wrap email-472"><input type="email" name="email-472" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Enter your email" /></span>
+                                            <label>
+                                                <img src="<?php echo base_url(); ?>assets/theme/img/icons/email.png" alt="">
+                                                EMAIL
+                                            </label>
+                                            <span class="wpcf7-form-control-wrap email-472">
+                                                <input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Enter your email" /></span>
                                         </div>
                                     </div>
                                     <div class="register_li">
                                         <div class="input-wrap">
-                                            <label><img src="<?php echo base_url(); ?>assets/theme/img/icons/phone.png" alt="">PHONE</label><span class="wpcf7-form-control-wrap text-554"><input type="text" name="text-554" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="PHONE" /></span>
+                                            <label><img src="<?php echo base_url(); ?>assets/theme/img/icons/phone.png" alt="">CONTACT NO.</label><span class="wpcf7-form-control-wrap text-554"><input type="text" name="text-554" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="PHONE" /></span>
                                         </div>
                                     </div>
                                     <div class="register_li">

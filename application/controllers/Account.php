@@ -138,7 +138,7 @@ class Account extends CI_Controller {
             $email = $this->input->post('email');
             $password = $this->input->post('password');
             $first_name = $this->input->post('first_name');
-            $last_name = $this->input->post('last_name');
+            $last_name = "";
             $cpassword = $this->input->post('con_password');
 
             $birth_date = $this->input->post('birth_date');
