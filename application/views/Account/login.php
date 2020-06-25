@@ -79,7 +79,9 @@ $this->load->view('layout/header');
                                     </div>
                                     <div class="register_li">
                                         <div class="input-wrap">
-                                            <label><img src="<?php echo base_url(); ?>assets/theme/img/icons/password.png" alt="">PASSWORD</label><span class="wpcf7-form-control-wrap text-555"><input type="text" name="text-555" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="PASSWORD" /></span>
+                                            <label><img src="<?php echo base_url(); ?>assets/theme/img/icons/password.png" alt="">PASSWORD</label>
+                                            <span class="wpcf7-form-control-wrap text-555">
+                                                <input type="text" name="text-555" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="PASSWORD" /></span>
                                         </div>
                                     </div>
                                     <div class="register_li">
