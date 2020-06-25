@@ -9,7 +9,7 @@ class Events extends CI_Controller {
         $this->load->model('Product_model');
         $this->load->model('Event_model');
 
-        
+
 
         $this->load->library('session');
         $this->user_id = $this->session->userdata('logged_in')['login_id'];
@@ -17,12 +17,23 @@ class Events extends CI_Controller {
 
     public function index() {
         $data = [];
-        
         $fdate = date('Y-m-d');
+        $datearray = array();
+        for ($i = 0; $i <= 6; $i++) {
+            $ndate = date('Y-m-d', strtotime(" +$i day"));
+            $datearray[$ndate] = date_format(date_create($ndate),"dS F");
+        }
+ 
+        $data['datearray'] = $datearray;
         $events = $this->Event_model->EventDataAll($fdate);
         $data['eventdata'] = $events;
         $this->load->view('Events/list', $data);
     }
 
-   
+    public function details($event_id) {
+        $events = $this->Event_model->EventData($event_id);
+        $data['eventdata'] = $events;
+        $this->load->view('Events/details', $data);
+    }
+
 }

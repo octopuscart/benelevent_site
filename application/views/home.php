@@ -384,7 +384,7 @@ $this->load->view('layout/header');
                                         </div>
                                         <h3 title="<?php echo $evalue['title']; ?>" class="textoverflow"><?php echo $evalue['title']; ?></h3>
                                         <p class="textoverflow"><?php echo $evalue['description']; ?> [&#8230;]</p>
-                                        <a class="read-more eventreadmore" href="#">read more<i class="fa fa-angle-right"></i></a>
+                                        <a class="read-more eventreadmore" href="<?php echo site_url("Events/details/".$evalue['aid'])?>">read more<i class="fa fa-angle-right"></i></a>
                                     </div>
                                 </div>
 
