@@ -3,214 +3,76 @@ $this->load->view('layout/header');
 ?>
 
 
-<div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column col-md-12">
-
-
-
+<div class="vc_row wpb_row vc_row-fluid eventdetails">
+    <div class="wpb_column col-md-12">
         <!-- #upcoming-event -->
         <section id="upcoming-event">
             <div class="container">
+
                 <div class="row">
-                    <div class="col-lg-7 col-md-7 col-sm-7">
-                        <div class="section-title">
-                            <h1>Events</h1>
-                            <p>Many events are going to orgnize around the world <br/> Just find your suitable event and join it from here.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-5 col-sm-5">
-                        <form action="" method="get" class="pull-right">
-                            <input type="text" name="s" value="" placeholder="Search Event"> <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="tab-title-wrap">
-                            <ul class="clearfix">
-                                <li class="filter active" data-filter="all"><span>All Event</span></li>
-                                <li class="filter active" data-filter=".april-14"><span>April 14</span></li>
-                                <li class="filter active" data-filter=".april-22"><span>April 22</span></li>
-                                <li class="filter active" data-filter=".april-28"><span>April 28</span></li>
-                                <li class="filter active" data-filter=".june-01"><span>June 01</span></li>
-                                <li class="filter active" data-filter=".may-10"><span>May 10</span></li>
-                                <li class="filter active" data-filter=".may-15"><span>May 15</span></li>
-                                <li class="filter active" data-filter=".may-22"><span>May 22</span></li>
-                                <li class="filter active" data-filter=".may-28"><span>May 28</span></li>
-                            </ul>
-                        </div>
-                        <div class="tab-content-wrap row">
-
-
-<?php
-print_r($eventdata);
-
-?>
-
-
-                            <div class="col-lg-3 col-md-4 col-sm-6 mix april-14  hvr-float-shadow wow fadeIn">
-                                <div class="img-holder"><img width="272" height="170" src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/1-3.jpg" class="img-responsive wp-post-image" alt="1" /></div>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="col-md-8">
+                                <div class="img-holder">
+                                    <img width="100%" src="<?php echo base_url(); ?>assets/images/defaultevents.png" class="img-responsive wp-post-image backeventimages" style="background: url(<?php echo $eventdata['event']['image']; ?>);" alt="1" />
+                                </div>
                                 <div class="content-wrap">
-                                    <img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/author.png" alt="" class="author-img">
-                                    <div class="meta">
-                                        <ul>
-                                            <li><span><i class="fa fa-clock-o"></i>Jan 20, 2016</span></li>
-                                            <li><span><i class="fa fa-map-marker"></i>California</span></li>
-                                        </ul>
-                                    </div>
-                                    <h3>Event Name</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing [&#8230;]</p>
-                                    <a class="read-more" href="#">read more<i class="fa fa-angle-right"></i></a>
+                                    <br/>
+                                    <h3 title="<?php echo $eventdata['event']['title']; ?>" class="textoverflow"><?php echo $eventdata['event']['title']; ?></h3>
+                                    <p class=""><?php echo $eventdata['event']['description']; ?></p>
                                 </div>
                             </div>
-
-
-
-
-
-                            <div class="col-lg-3 col-md-4 col-sm-6 mix april-14  hvr-float-shadow wow fadeIn">
-                                <div class="img-holder"><img width="272" height="170" src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/2-2.jpg" class="img-responsive wp-post-image" alt="2" /></div>
-                                <div class="content-wrap">
-                                    <img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/author.png" alt="" class="author-img">
-                                    <div class="meta">
-                                        <ul>
-                                            <li><span><i class="fa fa-clock-o"></i>Jan 20, 2016</span></li>
-                                            <li><span><i class="fa fa-map-marker"></i>California</span></li>
-                                        </ul>
-                                    </div>
-                                    <h3>Event Name</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing [&#8230;]</p>
-                                    <a class="read-more" href="#">read more<i class="fa fa-angle-right"></i></a>
+                            <div class="col-md-4">
+                                <div class="section-title">
+                                    <h1><?php echo $eventdata['event']['title']; ?></h1>
                                 </div>
-                            </div>
+                                <hr/>
+                                <small>Event organizing By</small>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#" style="    height: 50px;
+                                           width: 50px;
+                                           float: left;">
 
+                                            <img src="<?php echo base_url(); ?>assets/images/userdefault.png" alt="" class="author-img backeventimages media-object" style="background: url(<?php echo $eventdata['manager']['image']; ?>);height: 45px;width:45px">
 
-
-
-
-                            <div class="col-lg-3 col-md-4 col-sm-6 mix april-28  hvr-float-shadow wow fadeIn">
-                                <div class="img-holder"><img width="272" height="170" src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/3-2.jpg" class="img-responsive wp-post-image" alt="3" /></div>
-                                <div class="content-wrap">
-                                    <img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/author.png" alt="" class="author-img">
-                                    <div class="meta">
-                                        <ul>
-                                            <li><span><i class="fa fa-clock-o"></i>Jan 20, 2016</span></li>
-                                            <li><span><i class="fa fa-map-marker"></i>California</span></li>
-                                        </ul>
+                                        </a>
                                     </div>
-                                    <h3>Event Name</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing [&#8230;]</p>
-                                    <a class="read-more" href="#">read more<i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-
-
-
-
-
-                            <div class="col-lg-3 col-md-4 col-sm-6 mix june-01  hvr-float-shadow wow fadeIn">
-                                <div class="img-holder"><img width="272" height="170" src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/1-3.jpg" class="img-responsive wp-post-image" alt="1" /></div>
-                                <div class="content-wrap">
-                                    <img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/author.png" alt="" class="author-img">
-                                    <div class="meta">
-                                        <ul>
-                                            <li><span><i class="fa fa-clock-o"></i>Jan 20, 2016</span></li>
-                                            <li><span><i class="fa fa-map-marker"></i>California</span></li>
-                                        </ul>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><?php echo $eventdata['manager']['first_name'] . ' ' . $eventdata['manager']['last_name']; ?></h4>
+                                        <?php echo $eventdata['manager']['email']; ?>
                                     </div>
-                                    <h3>Event Name</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing [&#8230;]</p>
-                                    <a class="read-more" href="#">read more<i class="fa fa-angle-right"></i></a>
                                 </div>
+                                <hr/>
+
+
+
+                                <ul class="list-group">
+                                    <li class=""><i class="fa fa-calendar"></i> &nbsp;<?php echo $eventdata['event']['days']; ?></li>
+                                    <hr/>
+                                    <li class=""><i class="fa fa-clock-o"></i>  &nbsp;<?php echo $eventdata['event']['from_time']; ?> - <?php echo $eventdata['event']['to_time']; ?></li>
+                                    <hr/>
+                                    <li class="">
+                                        <i class="fa fa-map-marker" style="float: left;height: 60px; width: 18px;    padding-top: 18px;"></i> 
+                                        <div class="addressblockevent">
+                                            <?php echo $eventdata['event']['address']; ?>, <br/>
+                                            <?php echo $eventdata['event']['city']; ?>,  <?php echo $eventdata['event']['state']; ?>,  <?php echo $eventdata['event']['country']; ?>
+                                        </div>
+                                    </li>
+                                      <hr/>
+                                    <li class=""><i class="fa fa-phone"></i> &nbsp;<?php echo $eventdata['event']['contact_no']; ?></li>
+                                   <hr/>
+                                   <a href="#" class="colored hvr-bounce-to-right join-event-button">JOIN EVENT NOW</a>
+                                   <span>
+                                       Get notified when the event happens next time.
+                                   </span>
+                                </ul>
                             </div>
-
-
-
-
-
-                            <div class="col-lg-3 col-md-4 col-sm-6 mix may-10  hvr-float-shadow wow fadeIn">
-                                <div class="img-holder"><img width="272" height="170" src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/2-2.jpg" class="img-responsive wp-post-image" alt="2" /></div>
-                                <div class="content-wrap">
-                                    <img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/author.png" alt="" class="author-img">
-                                    <div class="meta">
-                                        <ul>
-                                            <li><span><i class="fa fa-clock-o"></i>Jan 20, 2016</span></li>
-                                            <li><span><i class="fa fa-map-marker"></i>California</span></li>
-                                        </ul>
-                                    </div>
-                                    <h3>Event Name</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing [&#8230;]</p>
-                                    <a class="read-more" href="#">read more<i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-
-
-
-
-
-                            <div class="col-lg-3 col-md-4 col-sm-6 mix may-15  hvr-float-shadow wow fadeIn">
-                                <div class="img-holder"><img width="272" height="170" src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/3-2.jpg" class="img-responsive wp-post-image" alt="3" /></div>
-                                <div class="content-wrap">
-                                    <img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/author.png" alt="" class="author-img">
-                                    <div class="meta">
-                                        <ul>
-                                            <li><span><i class="fa fa-clock-o"></i>Jan 20, 2016</span></li>
-                                            <li><span><i class="fa fa-map-marker"></i>California</span></li>
-                                        </ul>
-                                    </div>
-                                    <h3>Event Name</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing [&#8230;]</p>
-                                    <a class="read-more" href="#">read more<i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-
-
-
-
-
-                            <div class="col-lg-3 col-md-4 col-sm-6 mix may-22  hvr-float-shadow wow fadeIn">
-                                <div class="img-holder"><img width="272" height="170" src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/1-3.jpg" class="img-responsive wp-post-image" alt="1" /></div>
-                                <div class="content-wrap">
-                                    <img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/author.png" alt="" class="author-img">
-                                    <div class="meta">
-                                        <ul>
-                                            <li><span><i class="fa fa-clock-o"></i>Jan 20, 2016</span></li>
-                                            <li><span><i class="fa fa-map-marker"></i>California</span></li>
-                                        </ul>
-                                    </div>
-                                    <h3>Event Name</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing [&#8230;]</p>
-                                    <a class="read-more" href="#">read more<i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-
-
-
-
-
-                            <div class="col-lg-3 col-md-4 col-sm-6 mix may-28  hvr-float-shadow wow fadeIn">
-                                <div class="img-holder"><img width="272" height="170" src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/1-3.jpg" class="img-responsive wp-post-image" alt="1" /></div>
-                                <div class="content-wrap">
-                                    <img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/author.png" alt="" class="author-img">
-                                    <div class="meta">
-                                        <ul>
-                                            <li><span><i class="fa fa-clock-o"></i>Jan 20, 2016</span></li>
-                                            <li><span><i class="fa fa-map-marker"></i>California</span></li>
-                                        </ul>
-                                    </div>
-                                    <h3>Event Name</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing [&#8230;]</p>
-                                    <a class="read-more" href="http://google.com/">read more<i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
     </div>
 </div>
 

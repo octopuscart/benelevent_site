@@ -41,7 +41,7 @@ class Event_model extends CI_Model {
     public function EventDataAll($sart_date) {
         $date = date("Y-m-d");
         $this->db->where('date>=', $date);
-        
+
         $this->db->group_by('days');
         $this->db->order_by('date desc');
         $query = $this->db->get('events');
@@ -49,7 +49,7 @@ class Event_model extends CI_Model {
         $appointmentData = array();
         foreach ($countryAppointment as $akey => $avalue) {
             $aid = $avalue['days'];
-            $avalue['image'] = ADMINURL."assets/media/".$avalue['image'];
+            $avalue['image'] = ADMINURL . "assets/media/" . $avalue['image'];
             $this->db->where('days', $aid);
             $query = $this->db->get('events');
             $timeData = $query->result_array();
@@ -57,13 +57,13 @@ class Event_model extends CI_Model {
             $this->db->where('id', $avalue['user_id']);
             $query = $this->db->get('admin_users');
             $userData = $query->row_array();
-            $userData['image'] = ADMINURL."assets/profile_image/".$userData['image'];
+            $userData['image'] = ADMINURL . "assets/profile_image/" . $userData['image'];
             $avalue['manager'] = $userData;
 
             $avalue['dates'] = array();
             foreach ($timeData as $tkey => $tvalue) {
                 $temparray = array();
-                
+
                 $temparray['date'] = $tvalue['date'];
                 $temparray['timing1'] = $tvalue['from_time'];
                 $temparray['timing2'] = $tvalue['to_time'];
@@ -81,7 +81,13 @@ class Event_model extends CI_Model {
         $query = $this->db->get('events');
         $appData = $query->result_array();
         $appDataEvent = $appData[0];
-        $appointmentSingle["appointment"] = $appDataEvent;
+        $appDataEvent['image'] = ADMINURL . "assets/media/" . $appDataEvent['image'];
+        $appointmentSingle["event"] = $appDataEvent;
+        $this->db->where('id', $appDataEvent['user_id']);
+        $query = $this->db->get('admin_users');
+        $userData = $query->row_array();
+        $userData['image'] = ADMINURL . "assets/profile_image/" . $userData['image'];
+        $appointmentSingle['manager'] = $userData;
         $appointmentSingle['date_time_list'] = [];
         foreach ($appData as $key => $value) {
             $temp = array(
