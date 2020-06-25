@@ -21,13 +21,13 @@ switch ($baselink) {
 
 switch ($baselink) {
     case "http://localhost":
-        $adminlinkmain = $baselink . "/shopadmin";
+        $adminlinkmain = $baselink . "/bkardapp/";
         break;
-    case "http://192.168.1.2":
-          $adminlinkmain = $baselink . "/shopadmin";
+    case "http://192.168.1.3":
+          $adminlinkmain = $baselink . "/bkardapp/";
         break;
     default:
-        $adminlinkmain = "https://admin.maharajamart.com/";
+        $adminlinkmain = "https://admin.benelevent.com/";
 }
 
 define('ADMINURL', $adminlinkmain);

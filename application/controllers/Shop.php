@@ -7,13 +7,20 @@ class Shop extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('Product_model');
+        $this->load->model('Event_model');
+
+        
+
         $this->load->library('session');
         $this->user_id = $this->session->userdata('logged_in')['login_id'];
     }
 
     public function index() {
-        $data=[];
-
+        $data = [];
+        
+        $fdate = date('Y-m-d');
+        $events = $this->Event_model->EventDataAll($fdate);
+        $data['eventdata'] = $events;
         $this->load->view('home', $data);
     }
 
@@ -96,28 +103,29 @@ class Shop extends CI_Controller {
     }
 
     public function annual_charity() {
-          $this->load->view('pages/annual_charity');
+        $this->load->view('pages/annual_charity');
     }
-    
+
     public function booknow() {
         $this->load->view('pages/booknow');
     }
-    
-    public function blog($pageno=0) {
+
+    public function blog($pageno = 0) {
         $this->load->view('pages/blog');
     }
-    
-    function loyalprogram(){
-         $this->load->view('pages/loyalprogram');
+
+    function loyalprogram() {
+        $this->load->view('pages/loyalprogram');
     }
 
     function privacy_policy() {
         $this->load->view('pages/pp');
     }
+
     function gallery() {
         $this->load->view('pages/gallery');
     }
-    
+
     function charityIfram() {
         $this->load->view('pages/charityIfram');
     }

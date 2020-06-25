@@ -28,3 +28,21 @@ and open the template in the editor.
     padding: 40px 45px;
     margin-top: 55px;
 }
+
+.backeventimages{
+        background-size: cover!important;
+    background-position: center!important;
+}
+
+.textoverflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.eventreadmore{
+        padding: 5px;
+    border: 1px solid #3c9d91;
+    border-radius: 5px;
+}
