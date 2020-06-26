@@ -84,10 +84,10 @@
                 <tr>
                     <td colspan="6" style="font-size: 12px;">
 
-                        <p>Dear <?php echo $customer->first_name; ?> <?php echo $customer->last_name; ?>,</p><br/>
+                        <p>Dear <?php echo $customer->name; ?>,</p><br/>
 
                         <p> Thank you for registering your online account. </p>
-                        <p>You will be able to move through the events process faster, store multiple shipping addresses, view and track your Event in your account and more. </p> 
+                        <p>You will be able to move through the events process faster, store multiple events, view and track your Event in your account and more. </p> 
                         <p>Your Login Credentials: </p>
                         <table style="    margin-top: 12px;
                                border: 1px solid #e1e1e1;">

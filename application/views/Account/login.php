@@ -28,19 +28,23 @@ $this->load->view('layout/header');
                                             <label>
                                                 <img src="<?php echo base_url(); ?>assets/theme/img/icons/email.png" alt="">EMAIL</label>
                                             <span class="wpcf7-form-control-wrap email-472">
-                                                <input type="email" name="email-472" value=""  class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Enter your email" />
+                                                <input type="email" name="email" value=""  class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Enter your email" />
                                             </span>
                                         </div>
                                     </div>
 
                                     <div class="register_li">
                                         <div class="input-wrap">
-                                            <label><img src="<?php echo base_url(); ?>assets/theme/img/icons/password.png" alt="">PASSWORD</label><span class="wpcf7-form-control-wrap text-555"><input type="text" name="text-555" value=""  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="PASSWORD" /></span>
+                                            <label>
+                                                <img src="<?php echo base_url(); ?>assets/theme/img/icons/password.png" alt="">
+                                                PASSWORD</label>
+                                            <span class="wpcf7-form-control-wrap text-555">
+                                                <input type="password" name="password" value=""  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="PASSWORD" /></span>
                                         </div>
                                     </div>
                                     <div class="register_li">
                                         <div class="input-wrap">
-                                            <input type="submit" value="LOGIN" class="wpcf7-form-control wpcf7-submit" />
+                                            <input type="submit" name="signIn" value="LOGIN" class="wpcf7-form-control wpcf7-submit" />
                                         </div>
                                     </div>
                                     <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>				</div>
@@ -74,23 +78,23 @@ $this->load->view('layout/header');
                                     </div>
                                     <div class="register_li">
                                         <div class="input-wrap">
-                                            <label><img src="<?php echo base_url(); ?>assets/theme/img/icons/phone.png" alt="">CONTACT NO.</label><span class="wpcf7-form-control-wrap text-554"><input type="text" name="text-554" value=""  class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Your Contact No." /></span>
+                                            <label><img src="<?php echo base_url(); ?>assets/theme/img/icons/phone.png" alt="">CONTACT NO.</label><span class="wpcf7-form-control-wrap text-554"><input type="text" name="contact_no" value=""  class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Your Contact No." /></span>
                                         </div>
                                     </div>
                                     <div class="register_li">
                                         <div class="input-wrap">
                                             <label><img src="<?php echo base_url(); ?>assets/theme/img/icons/password.png" alt="">PASSWORD</label>
                                             <span class="wpcf7-form-control-wrap text-555">
-                                                <input type="text" name="password" value=""  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Password" />
+                                                <input type="password" name="password" value=""  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Password" />
                                             </span>
                                             <span class="wpcf7-form-control-wrap text-555">
-                                                <input type="text" name="con_password" value=""  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Confirm Your Password" />
+                                                <input type="password" name="con_password" value=""  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Confirm Your Password" />
                                             </span>
                                         </div>
                                     </div>
                                     <div class="register_li">
                                         <div class="input-wrap">
-                                            <input type="submit" value="registration" class="wpcf7-form-control wpcf7-submit" />
+                                            <input type="submit" name="registration" value="registration" class="wpcf7-form-control wpcf7-submit" />
                                         </div>
                                     </div>
                                     <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>		

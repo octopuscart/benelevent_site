@@ -85,3 +85,47 @@ and open the template in the editor.
 .join-event-button:hover {
     color: #ff8625;
 }
+
+
+.profileblock input {
+    height: 40px;
+    line-height: 40px;
+    color: #929FA8;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #E3E3E3;
+    padding: 0 5px;
+    width: 100%;
+    transition: all .3s ease;
+}
+
+.profile-header{
+    padding:10px;
+}
+
+.profile-header {
+    font-size: 13px;
+    padding: 37px 0px 0px;
+    color: white;
+    text-align: center;
+}
+
+
+.bigblock {
+    background: #fff;
+    padding: 30px 30px;
+}
+
+.woocommerce-MyAccount-navigation-link a{
+      color: black;
+    font-size: 18px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+}

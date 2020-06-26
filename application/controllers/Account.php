@@ -58,8 +58,7 @@ class Account extends CI_Controller {
 
 
         if (isset($_POST['update_profile'])) {
-            $this->db->set('first_name', $this->input->post('first_name'));
-            $this->db->set('last_name', $this->input->post('last_name'));
+            $this->db->set('name', $this->input->post('name'));
             $this->db->set('contact_no', $this->input->post('contact_no'));
             $this->db->set('gender', $this->input->post('gender'));
             $this->db->set('birth_date', $this->input->post('birth_date'));
@@ -94,7 +93,7 @@ class Account extends CI_Controller {
             $username = $this->input->post('email');
             $password = $this->input->post('password');
 
-            $this->db->select('au.id,au.first_name,au.last_name,au.email,au.password,au.user_type, au.image');
+            $this->db->select('au.id,au.name,au.email,au.password,au.user_type, au.image');
             $this->db->from('website_users au');
             $this->db->where('email', $username);
             $this->db->where('password', md5($password));
@@ -139,24 +138,23 @@ class Account extends CI_Controller {
             $password = $this->input->post('password');
             $name = $this->input->post('name');
             $cpassword = $this->input->post('con_password');
-            $birth_date = $this->input->post('contact_no');
+            $contact_no = $this->input->post('contact_no');
         
-
+              
             if ($cpassword == $password) {
                 $user_check = $this->User_model->check_user($email);
                 if ($user_check) {
                     $data1['msg'] = 'Email Address Already Registered.';
                 } else {
                     $userarray = array(
-                        'first_name' => $first_name,
-                        'last_name' => $last_name,
+                        'name' => $name,
                         'email' => $email,
                         'password' => md5($password),
                         'password2' => $password,
                         'profession' => "",
                         'country' => "",
-                        'gender' => $gender,
-                        'birth_date' => $birth_date,
+                        'gender' => "",
+                        'contact_no' => $contact_no,
                         'registration_datetime' => date("Y-m-d h:i:s A")
                     );
                     $this->db->insert('website_users', $userarray);
@@ -164,8 +162,8 @@ class Account extends CI_Controller {
 
                     $sess_data = array(
                         'username' => $email,
-                        'first_name' => $first_name,
-                        'last_name' => $last_name,
+                        'name' => $first_name,
+                        'contact_no' => $contact_no,
                         'login_id' => $user_id,
                     );
 

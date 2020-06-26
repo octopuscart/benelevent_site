@@ -3,68 +3,23 @@ $this->load->view('layout/header');
 ?>
 
 
-<style>
-    .order_box{
-        padding: 10px;
-        padding-bottom: 11px!important;
-        height: 110px;
-    }
-    .order_box li{
-        line-height: 19px!important;
-        padding: 7px!important;
-        border: none!important;
-    }
+<!-- /#page-title -->
+<!-- #single-blog-post -->
+<section id="single-blog-post">
+    <div class="container">
 
-    .order_box li i{
-        float: left!important;
-        line-height: 19px!important;
-        margin-right: 13px!important;
-    }
+        <div class="row">
+            <div>
 
-    .blog-posts article {
-        margin-bottom: 10px;
-    }
-    .checkbox{
-        font-size: 15px;
-    }
-</style>
-
-<style>
-    footer{
-        position: inherit!important;
-    }
-</style> 
-<!-- Inner Page Banner Area Start Here -->
-<section id="page-title" class="page-title-parallax page-title-center border-bottom" style="background-image: url('<?php echo base_url(); ?>assets/theme2/res/images/sections/blog.jpg');   margin-top: -30px;    padding: 100px 0px;   " data-center="" data-top-bottom="">
-    <div class="container clearfix">
-        <h1 class="font-secondary capitalize ls0" style="font-size: 62px;color:white;">Account</h1>
-    </div>
-</section>
-<!-- Inner Page Banner Area End Here -->
-
-<img src="<?php echo base_url(); ?>assets/theme2/res/images/sketch.png" style="    margin-top: -65px;
-     position: absolute;
-     z-index: 200;" />
-<!-- Content -->
-
-<!-- Content -->
-<div id="content"  class="my-account-page-area"> 
-
-    <!-- Blog -->
-    <section class="new-main blog-posts ">
-        <div class="container"> 
-
-            <!-- News Post -->
-            <div class="news-post">
-                <div class="row"> 
-
+                <div class="content-holder ">
                     <?php
                     $this->load->view('Account/sidebar');
                     ?>
 
 
-                    <div class="col-md-9" >
-                        <h4>Newsletter Preferences</h4>
+                    <div class="col-md-9 checkout-form bigblock">
+                        
+ <h4>Newsletter Preferences</h4>
                         <hr/>
                         <div class="checkbox">
                             <label>
@@ -82,20 +37,52 @@ $this->load->view('layout/header');
                     </div>
 
 
-
                 </div>
-                </section>
+
+
             </div>
-            <!-- End Content --> 
+        </div>
 
 
+    </div>
+</section>
+<!-- /#single-blog-post -->
+<!-- footer -->
 
-            <?php
-            $this->load->view('layout/footer');
-            ?>
-            <script>
-                $(function () {
-                    $(".woocommerce-MyAccount-navigation-link--dashboard").removeClass("active");
-                    $(".credit_page").addClass("active");
-                })
-            </script>
+<!-- Modal -->
+<div class="modal  fade" id="changePassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="    z-index: 20000000;">
+    <div class="modal-dialog modal-sm woocommerce" role="document" style="width: 300px">
+        <form action="#" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-size: 15px">Change Password</h4>
+                </div>
+                <div class="modal-body checkout-form ">
+
+                    <label class="">
+                        Old Password
+                        <input type="text" name="old_password"  value="" class=" form-control required">
+                    </label>
+
+                    <label class="">
+                        New Password
+                        <input type="text" name="new_password"  value="" class=" form-control required">
+                    </label>
+                    <br/>
+                    <label class="">
+                        Confirm Password
+                        <input type="text" name="re_password"  value="" class=" form-control required">
+                    </label>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" name="change_password" class="btn btn-primary">Change Password</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<?php
+$this->load->view('layout/footer');
+?>
