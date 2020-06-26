@@ -46,7 +46,7 @@ class Account extends CI_Controller {
                     $password = md5($re_password);
                     $this->db->set('password', $password);
                     $this->db->where('id', $this->user_id);
-                    $this->db->update('admin_users');
+                    $this->db->update('website_users');
                     redirect('Account/profile');
                 } else {
                     $data['msg'] = "Password didn't match.";
@@ -65,7 +65,7 @@ class Account extends CI_Controller {
             $this->db->set('birth_date', $this->input->post('birth_date'));
 
             $this->db->where('id', $this->user_id);
-            $this->db->update('admin_users');
+            $this->db->update('website_users');
 
             $session_user = $this->session->userdata('logged_in');
             $session_user['first_name'] = $this->input->post('first_name');
@@ -95,7 +95,7 @@ class Account extends CI_Controller {
             $password = $this->input->post('password');
 
             $this->db->select('au.id,au.first_name,au.last_name,au.email,au.password,au.user_type, au.image');
-            $this->db->from('admin_users au');
+            $this->db->from('website_users au');
             $this->db->where('email', $username);
             $this->db->where('password', md5($password));
             $this->db->limit(1);
@@ -137,14 +137,10 @@ class Account extends CI_Controller {
 
             $email = $this->input->post('email');
             $password = $this->input->post('password');
-            $first_name = $this->input->post('first_name');
-            $last_name = "";
+            $name = $this->input->post('name');
             $cpassword = $this->input->post('con_password');
-
-            $birth_date = $this->input->post('birth_date');
-            $gender = $this->input->post('gender');
-            $country = $this->input->post('country');
-            $profession = $this->input->post('profession');
+            $birth_date = $this->input->post('contact_no');
+        
 
             if ($cpassword == $password) {
                 $user_check = $this->User_model->check_user($email);
@@ -163,7 +159,7 @@ class Account extends CI_Controller {
                         'birth_date' => $birth_date,
                         'registration_datetime' => date("Y-m-d h:i:s A")
                     );
-                    $this->db->insert('admin_users', $userarray);
+                    $this->db->insert('website_users', $userarray);
                     $user_id = $this->db->insert_id();
 
                     $sess_data = array(

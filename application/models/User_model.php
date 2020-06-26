@@ -22,7 +22,7 @@ class User_model extends CI_Model {
     //check user if exist in system
     function check_user($emailid) {
         $this->db->where('email', $emailid);
-        $query = $this->db->get('admin_users');
+        $query = $this->db->get('website_users');
         $user_details = $query->row();
         return $user_details;
     }
@@ -31,7 +31,7 @@ class User_model extends CI_Model {
     //get user detail by id
     function user_details($id) {
         $this->db->where('id', $id);
-        $query = $this->db->get('admin_users');
+        $query = $this->db->get('website_users');
         if ($query->num_rows() > 0) {
             return $query->result()[0];
         } else {
@@ -89,13 +89,13 @@ class User_model extends CI_Model {
                 $this->db->where(array('user_type' => $user_type, 'status!=' => 'Blocked'));
                 break;
         }
-        $query = $this->db->get('admin_users');
+        $query = $this->db->get('website_users');
         return $query->result();
     }
 
     function registration_mail($user_id) {
         $this->db->where('id', $user_id);
-        $query = $this->db->get('admin_users');
+        $query = $this->db->get('website_users');
         $customer = $query->row();
 
 
@@ -113,11 +113,11 @@ class User_model extends CI_Model {
                 'log_type' => 'Registration',
                 'log_datetime' => date('Y-m-d H:i:s'),
                 'user_id' => $user_id,
-                'log_detail' => "Customer registration on website. "
+                'log_detail' => "New registration on website. "
             );
             $this->db->insert('system_log', $orderlog);
 
-            $subject = "Welcome to Woodlands - Indian Vegetarian Restaurant - Your account with www.woodlandshk.com has been successfully created!";
+            $subject = "Welcome to Benelevent - Your account with www.benelevent.com has been successfully created!";
             $this->email->subject($subject);
             
             $customerdetails['customer'] = $customer;
