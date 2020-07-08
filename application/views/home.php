@@ -180,7 +180,7 @@ $this->load->view('layout/header');
                             var e = new Object, i = jQuery(window).width(), t = 9999, r = 0, n = 0, l = 0, f = 0, s = 0, h = 0;
                             e.c = jQuery('#rev_slider_1_1');
                             e.gridwidth = [1240];
-                            e.gridheight = [820];
+                            e.gridheight = [450];
 
                             e.sliderLayout = "fullwidth";
                             if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function (e, f) {
@@ -254,7 +254,7 @@ $this->load->view('layout/header');
                                 },
                                 visibilityLevels: [1240, 1024, 778, 480],
                                 gridwidth: 1240,
-                                gridheight: 820,
+                                gridheight: 450,
                                 lazyType: "none",
                                 shadow: 0,
                                 spinner: "spinner0",
@@ -293,51 +293,9 @@ $this->load->view('layout/header');
         </div>
     </div>
 </div>
-<div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column col-md-12">
-
-        <!-- #information-bar -->
-        <section id="information-bar">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <ul>
-                            <li><span class="img-holder"><img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/1-5.png" alt="Image"></span></li>
-                            <li><span><b>Locations</b> Within city of traveling</span></li>
-                        </ul>
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <ul>
-                            <li><span class="img-holder"><img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/2-5.png" alt="Image"></span></li>
-                            <li><span><b>Category</b> Industry Interest</span></li>
-                        </ul>
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <ul>
-                            <li><span class="img-holder"><img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/3-5.png" alt="Image"></span></li>
-                            <li><span><b>Calender</b> Date that suits you</span></li>
-                        </ul>
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <ul>
-                            <li><span class="img-holder"><img src="<?php echo base_url(); ?>assets/theme/uploads/2016/01/4-5.png" alt="Image"></span></li>
-                            <li><span><b>Price</b> Free Or Paid</span></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-    </div>
-</div>
+<?php
+$this->load->view('Events/eventFilter');
+?>
 
 <div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column col-md-12">
 
@@ -384,7 +342,7 @@ $this->load->view('layout/header');
                                         </div>
                                         <h3 title="<?php echo $evalue['title']; ?>" class="textoverflow"><?php echo $evalue['title']; ?></h3>
                                         <p class="textoverflow"><?php echo $evalue['description']; ?> [&#8230;]</p>
-                                        <a class="read-more eventreadmore" href="<?php echo site_url("Events/details/".$evalue['aid'])?>">read more<i class="fa fa-angle-right"></i></a>
+                                        <a class="read-more eventreadmore" href="<?php echo site_url("Events/details/".$evalue['id'])?>">read more<i class="fa fa-angle-right"></i></a>
                                     </div>
                                 </div>
 
@@ -559,4 +517,8 @@ $this->load->view('layout/header');
 </div>
 <?php
 $this->load->view('layout/footer');
+?>
+
+<?php
+$this->load->view('Events/eventFilterLib');
 ?>

@@ -3,9 +3,14 @@ $this->load->view('layout/header');
 ?>
 
 
-<div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column col-md-12">
 
 
+<div class="vc_row wpb_row vc_row-fluid">
+    <div class="wpb_column col-md-12">
+
+        <?php
+        $this->load->view('Events/eventFilter');
+        ?>
 
         <!-- #upcoming-event -->
         <section id="upcoming-event">
@@ -27,12 +32,12 @@ $this->load->view('layout/header');
                     <div class="col-lg-12">
                         <div class="tab-title-wrap">
                             <ul class="clearfix">
-                                 <li class="filter active" data-filter="all"><span>All Event</span></li>
+                                <li class="filter active" data-filter="all"><span>All Event</span></li>
                                 <?php
                                 foreach ($datearray as $key => $value) {
                                     ?>
 
-                                    <li class="filter active" data-filter=".<?php echo $key;?>"><span><?php echo $value;?></span></li>
+                                    <li class="filter active" data-filter=".<?php echo $key; ?>"><span><?php echo $value; ?></span></li>
                                     <?php
                                 }
                                 ?>
@@ -44,7 +49,7 @@ $this->load->view('layout/header');
                                 ?>
 
 
-                                <div class="col-lg-3 col-md-4 col-sm-6 mix   <?php echo $evalue['date'];?>">
+                                <div class="col-lg-3 col-md-4 col-sm-6 mix   <?php echo $evalue['dateclass']; ?>">
                                     <div class="img-holder">
                                         <img width="272" height="170" src="<?php echo base_url(); ?>assets/images/defaultevents.png" class="img-responsive wp-post-image backeventimages" style="background: url(<?php echo $evalue['image']; ?>)" alt="1" />
                                     </div>
@@ -58,7 +63,7 @@ $this->load->view('layout/header');
                                         </div>
                                         <h3 title="<?php echo $evalue['title']; ?>" class="textoverflow"><?php echo $evalue['title']; ?></h3>
                                         <p class="textoverflow"><?php echo $evalue['description']; ?> [&#8230;]</p>
-                                        <a class="read-more eventreadmore" href="<?php echo site_url("Events/details/" . $evalue['aid']) ?>">read more<i class="fa fa-angle-right"></i></a>
+                                        <a class="read-more eventreadmore" href="<?php echo site_url("Events/details/" . $evalue['id']) ?>">read more<i class="fa fa-angle-right"></i></a>
                                     </div>
                                 </div>
 
@@ -77,4 +82,8 @@ $this->load->view('layout/header');
 
 <?php
 $this->load->view('layout/footer');
+?>
+
+<?php
+$this->load->view('Events/eventFilterLib');
 ?>
