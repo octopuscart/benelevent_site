@@ -8,7 +8,7 @@ $this->load->view('layout/header');
 </style>
 <!-- Inner Page Banner Area Start Here -->
 <section id="page-title" class="page-title-parallax page-title-center border-bottom" style="background-image: url('<?php echo base_url(); ?>assets/theme2/res/images/sections/contact.jpg');   margin-top: -30px;    ;         background-position: -370px -81px;
-    padding: 150px 0px;" data-center="" data-top-bottom="">
+         padding: 150px 0px;" data-center="" data-top-bottom="">
     <div class="container clearfix">
         <h1 class="font-secondary capitalize ls0 " style="font-size: 62px;">Contact Us</h1>
     </div>
@@ -19,7 +19,7 @@ $this->load->view('layout/header');
      z-index: 200;" />
 
 <section id="slider" class="slider-element slider-reservation clearfix" style="    background: white;">
-   <?php
+    <?php
     $this->load->view('layout/contactfooter');
     ?>
 
